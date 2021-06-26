@@ -1,0 +1,153 @@
+body {
+  justify-content: center;
+  background-image: url("./images/blurry-gradient-haikei.svg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#container {
+  margin: 50px auto;
+  width: 770px;
+}
+
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #2e0e02;
+}
+
+#weekdays div {
+  width: 110px;
+  padding: 10px;
+  text-align: center;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#calendarHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day:hover {
+  background-color: #e8faed;
+}
+
+.currentDay {
+  background-color: #e8f4fa;
+}
+
+.event {
+  font-size: 15px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #fffcff !important;
+  box-shadow: none !important;
+  opacity: 0%;
+}
+
+#newEventModal,
+#deleteEventModal {
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+
+#nextButton,
+#backButton {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #212529;
+  font-size: 35px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  float: right;
+  display: flex;
+}
+
+#nextButton:hover,
+#backButton:hover {
+  color: #0d6efd;
+}
+
+#monthDisplay {
+  float: left;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-text {
+  color: white;
+}
+
+#delete-btn {
+  float: right;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.close {
+  border-color: #dc3545;
+  color: white;
+  background-color: #dc3545;
+  border-radius: 5px;
+}
