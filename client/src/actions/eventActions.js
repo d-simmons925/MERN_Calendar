@@ -46,6 +46,19 @@ export const deleteEvent = (id) => (dispatch, getState) =>{
       .catch(error => dispatch(returnErrors(error.response.data, error.response.status)))
 }
 
+export const updateEvent = event => (dispatch, getState) =>{
+  console.log(event)
+  axios.put(`/events/${event.id}`, event, tokenConfig(getState))
+    .then(response =>{
+      console.log(response)
+      dispatch({
+        type: 'UPDATE_EVENT',
+        payload: event
+      })
+    })
+      .catch(error => dispatch(returnErrors(error.response.data, error.response.status)))
+}
+
 export const clearEvents = () =>{
   return {
     type: 'CLEAR_EVENTS'

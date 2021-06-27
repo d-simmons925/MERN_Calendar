@@ -27,4 +27,10 @@ router.delete('/:id', auth, (req, res) =>{
         .catch(err => req.status(404).json({success: false}))
 })
 
+router.put('/:id', auth, (req, res)=>{
+  Event.findByIdAndUpdate(req.params.id, {$set:{title: req.body.title}})
+    .then(()=> res.json({success: true}))
+      .catch(err => req.status(404).json({success: false}))  
+})
+
 module.exports = router
