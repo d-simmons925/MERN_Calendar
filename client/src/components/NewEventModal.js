@@ -49,7 +49,7 @@ const NewEventModal = ({clearErrors, auth}) => {
 
   return (
     <div>
-      <Button color="primary" onClick={toggle}>
+      <Button color="primary" className="add-event-btn" onClick={toggle}>
         Add Event
       </Button>
 
