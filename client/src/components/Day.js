@@ -71,7 +71,7 @@ const Day = ({day, isAuthenticated}) => {
                   type="text"
                   name="title"
                   id="title"
-                  value={title}
+                  placeholder={title}
                   onChange={(e)=> setNewTitle(e.target.value)}
                 />
                 <Button color="primary" id="save-btn" onClick={() => onSave(_id)}>Save</Button>
@@ -101,7 +101,6 @@ const Day = ({day, isAuthenticated}) => {
     </div>
   )
 }
-
 
 const mapStateToProps = state =>({
   isAuthenticated: state.auth.isAuthenticated
