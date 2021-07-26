@@ -1,6 +1,6 @@
 # MERN Calendar
 
-This project converts Portexe's react calendar(which can be found here https://github.com/portexe/ReactCalendar) into a full stack CRUD application. I also changed some of the css to make the calendar responsive so it can work on mobile devices.
+This project converts Portexe's react calendar( which can be found here: https://github.com/portexe/ReactCalendar) into a full stack CRUD application. I also changed some of the css to make the calendar responsive so it can work on mobile devices.
 
 # Tech used
 
