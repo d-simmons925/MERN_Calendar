@@ -10,6 +10,7 @@ This project converts Portexe's react calendar( which can be found here: https:/
 - bcrypt
 - React
 - Redux
+- Axios
 - Reactstrap/ Bootstrap 4
 
 # Example Screenshots
