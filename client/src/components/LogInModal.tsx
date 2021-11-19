@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import PropTypes from 'prop-types'
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, NavLink, Alert } from 'reactstrap'
 import { connect, useDispatch } from 'react-redux'
 import { login } from '../actions/authActions'
@@ -85,12 +84,6 @@ const LoginModal = ({ error, isAuthenticated, clearErrors }: ModalI) => {
     </div>
   )
 }
-
-// LoginModal.propTypes = {
-//   isAuthenticated: PropTypes.bool,
-//   error: PropTypes.object.isRequired,
-//   clearErrors: PropTypes.func.isRequired
-// }
 
 const mapStateToProps = (state: AuthReduxPropsI) => ({
   isAuthenticated: state.auth.isAuthenticated,

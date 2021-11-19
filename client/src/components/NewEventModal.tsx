@@ -1,10 +1,9 @@
 import React, { useState, useCallback } from 'react'
-import PropTypes from 'prop-types'
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap'
 import { connect, useDispatch } from 'react-redux'
 import { addEvent } from '../actions/eventActions'
 import { clearErrors } from '../actions/errorActions'
-import { NewEventI, AuthI, NewEventReduxPropsI } from '../types/interfaces'
+import { NewEventI, NewEventReduxPropsI } from '../types/interfaces'
 
 const NewEventModal = ({ clearErrors, auth }: NewEventI) => {
   const [title, setTitle] = useState<string>()
@@ -66,10 +65,6 @@ const NewEventModal = ({ clearErrors, auth }: NewEventI) => {
     </div>
   )
 }
-
-// NewEventModal.propTypes = {
-//   clearErrors: PropTypes.func.isRequired
-// }
 
 const mapStateToProps = (state: NewEventReduxPropsI) => ({
   auth: state.auth,
