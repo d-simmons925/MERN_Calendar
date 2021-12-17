@@ -177,36 +177,51 @@ code {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 780px) {
   #container {
     margin: 5px auto;
-    width: 370px;
+    width: 100%;
   }
 
   #weekdays div {
-    width: 55px;
-    padding: 5px;
-    font-size: 14px;
+    width: 14%;
   }
 
-  #monthDisplay {
-    font-size: 24px;
+  .navbar-brand {
+    font-size: 18px;
   }
 
-  .add-event-btn {
-    font-size: 14px;
-    margin: auto;
-  }
-
-  .day {
-    width: 48px;
-    padding: 2px;
-    height: 70px;
-    margin: 2px;
+  #calendar div {
+    width: 14%;
   }
 
   .event {
-    font-size: 10px;
+    width: 100% !important;
+    border: none !important;
+    font-size: 12px;
+  }
+
+  .day {
+    width: 95% !important;
+    padding: 0;
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #monthDisplay {
+    font-size: 18px;
+  }
+
+  .add-event-btn {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  #backButton,
+  #nextButton {
+    font-size: 25px;
+    width: 35px;
   }
 }
 
@@ -231,9 +246,5 @@ code {
 
   .add-event-btn {
     font-size: 10px;
-  }
-
-  .day {
-    width: 36px;
   }
 }
