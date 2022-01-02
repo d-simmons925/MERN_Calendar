@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { returnErrors } from './errorActions'
-// import { Dispatch } from 'react'
 import { AuthFuncI, ConfigHeadersI } from '../types/interfaces'
 
 export const loadUser = () => (dispatch: Function, getState: Function) => {

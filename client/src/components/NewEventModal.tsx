@@ -20,13 +20,11 @@ const NewEventModal = ({ clearErrors, auth }: NewEventI) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    const day = new Date(date).getDate()
-    const month = new Date(date).getMonth()
-    const year = new Date(date).getFullYear()
+    const parsedDate = Date.parse(date)
 
     const author = auth.user.id
 
-    const dateString = `${month + 1}/${day + 1}/${year}`
+    const dateString = new Date(parsedDate + 86400000).toLocaleDateString()
 
     const newEvent = {
       title,
